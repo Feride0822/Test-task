@@ -44,6 +44,10 @@ function createCard(product){
     const title = document.createElement('div');
     title.className = 'product-title';
     title.textContent = product.title;
+
+    const description = document.createElement('div');
+    description.className = 'product-description';
+    description.textContent = product.description;
   
     const price = document.createElement('div');
     price.className = 'product-price';
@@ -60,6 +64,7 @@ function createCard(product){
 
     card.appendChild(img);
     card.appendChild(title);
+    card.appendChild(description);
     card.appendChild(price);
     const action = document.createElement('div');
     action.style.marginTop = 'auto';
